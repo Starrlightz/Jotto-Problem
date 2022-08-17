@@ -8,4 +8,5 @@ Compiled on WSL2 with
 g++ -Ofast -unroll-loops -std=c++17 -Wl,-z,stack-size=256144 -Wall -Wextra -pedantic -o C.exe C.cpp -ltbb
 ```
 
-`words_alpha.txt` is taken from https://github.com/dwyl/english-words and `wordle-combined.txt` is a merger of the two files from: https://gist.github.com/cfreshman
+- `words_alpha.txt` is taken from https://github.com/dwyl/english-words
+- `wordle-combined.txt` is a merger of the two files from https://gist.github.com/cfreshman
