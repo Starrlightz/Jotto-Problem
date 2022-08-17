@@ -1,5 +1,5 @@
 # Jotto-Problem
-A fast O(n^3/64) solution written in C++ for the so called Jotto problem
+A fast O(n^3/64) solution written in C++ for the so called Jotto problem, finding 5 words which use 25 different letters of the alphabet.
 
 On my machine, this runs in ~0.22s for the first word list and in ~0.44s for the second one. The implementation is (somewhat) parallelised but it's not faster than running it sequentially on my 8 thread CPU.
 
