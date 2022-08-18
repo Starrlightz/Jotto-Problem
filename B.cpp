@@ -63,7 +63,6 @@ int32_t main() {
 			if (!(enc[i] & enc[j]))
 				v[i].set(j), v[j].set(i);
 	Time();
-	vector<tuple<int, int, int>> sol;
 	int cnt = 0;
 	for (int i = 0; i < n - 2; ++i) {
 		int mask = enc[i];
@@ -86,6 +85,7 @@ int32_t main() {
 			for (int k = cur._Find_next(j + 1); k < n; k = cur._Find_next(k)) {
 				int finalmask = mask | enc[j] | enc[k], neededmask = ALL ^ finalmask;
 				if (Count(neededmask)) {
+					// reconstruct solution
 					int x = enc[i] | enc[j];
 					vector<pair<int, int>> sol1, sol2;
 					for (int i = 0; i < n; ++i)
