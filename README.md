@@ -7,6 +7,15 @@ Compiled on WSL2 with
 ```b
 g++ -Ofast -unroll-loops -std=c++17 -Wl,-z,stack-size=65536 -Wall -Wextra -pedantic -o B B.cpp -ltbb
 ```
+You can test the code by doing 
+```b
+# smaller dictionary
+make B
+./B
+# bigger dictionary
+make C
+./C
+```
 
 - `words_alpha.txt` is taken from https://github.com/dwyl/english-words
 - `wordle-combined.txt` is a merger of the two files from https://gist.github.com/cfreshman
