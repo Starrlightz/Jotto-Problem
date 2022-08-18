@@ -5,7 +5,7 @@ On my machine, this runs in ~0.22s for the first word list and in ~0.44s for the
 
 Compiled on WSL2 with
 ```b
-g++ -Ofast -unroll-loops -std=c++17 -Wl,-z,stack-size=256144 -Wall -Wextra -pedantic -o B.exe B.cpp -ltbb
+g++ -Ofast -unroll-loops -std=c++17 -Wl,-z,stack-size=65536 -Wall -Wextra -pedantic -o B B.cpp -ltbb
 ```
 
 - `words_alpha.txt` is taken from https://github.com/dwyl/english-words
